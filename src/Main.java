@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -92,4 +93,36 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
     }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+//        Задача 4
+//В банке для клиентов организовывается доставка карт на дом. Чтобы известить клиента о том,
+// когда будет доставлена его карта, нужно знать расстояние от офиса до адреса доставки.
+//Правила доставки такие:
+//Доставка в пределах 20 км занимает сутки.
+//Доставка в пределах от 20 км до 60 км добавляет еще один день доставки.
+//Доставка в пределах 60 км до 100 км добавляет еще одни сутки.
+//Свыше 100 км доставки нет.
+//То есть с каждым следующим интервалом доставки срок увеличивается на 1 день.
+//Напишите программу, которая выдает сообщение в консоль: "Потребуется дней: " + срок доставки.
+//Объявите целочисленную переменную deliveryDistance = 95, которая содержит дистанцию до клиента
+
+        int deliveryDistance = 95;
+        int deliveryTime = 1;
+
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance <= 60) {
+            deliveryTime = deliveryTime + 1;
+            System.out.println("Потребуется дней: " + deliveryTime);
+
+        } else if (deliveryDistance <= 100) {
+            deliveryTime = deliveryTime + 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else {
+            System.out.println("По данному адресу доставка невозможна");
+        }
+    }
+
 }
