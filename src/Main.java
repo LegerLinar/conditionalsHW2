@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1 () {
@@ -17,7 +18,7 @@ public class Main {
         int clientOS = 1;
 
         switch (clientOS){
-            case '0':
+            case 0:
                 System.out.println("Установите версию приложения для iOS по ссылке");
                 break;
             default:
@@ -61,7 +62,34 @@ public class Main {
             }
 
         }
+    }
 
+    public static void task3() {
+        System.out.println("Задача 3");
 
+//        Задача 3
+//Напишите программу, которая определяет, является ли год високосным или нет.
+//Переменную года назовите year, в которую можно подставить значение интересующего нас года. Например, 2021.
+//Программа должна определять, високосный год или нет, и выводить соответствующее сообщение:
+// « …. год является високосным» или «... год не является високосным».
+//Небольшая справка: високосным является каждый четвертый год, но не является каждый сотый.
+// Также високосным является каждый четырехсотый год.
+
+        int year = 2021;
+        float yearDivisor = year / 4f;
+        float yearPerCenturyDivisor = year / 100f;
+        float yearPerFourCenturiesDivisor = year / 400f;
+
+        if (year / 100 == yearPerCenturyDivisor) {
+            if (year / 400 == yearPerFourCenturiesDivisor) {
+                System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным");
+            }
+        } else if (year / 4 == yearDivisor) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
     }
 }
