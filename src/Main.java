@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1 () {
@@ -124,5 +125,58 @@ public class Main {
             System.out.println("По данному адресу доставка невозможна");
         }
     }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+//Напишите программу, которая определяет по номеру месяца в году, к какому сезону этот месяц принадлежит.
+// Например, 1-й месяц (он же январь) принадлежит к сезону зима.
+//Для написания программы используйте оператор switch.
+// Для обозначения номера месяца используйте переменную monthNumber = 12.
+//Пропишите условие, при котором программа не будет выполняться (номер месяца больше 12).
+
+        int monthNumber = 12;
+
+        switch (monthNumber) {
+            case 1:
+                System.out.println("Данный месяц является зимним");
+                break;
+            case 2:
+                System.out.println("Данный месяц является зимним");
+                break;
+            case 3:
+                System.out.println("Данный месяц весенним");
+                break;
+            case 4:
+                System.out.println("Данный месяц является весенним");
+                break;
+            case 5:
+                System.out.println("Данный месяц является весенним");
+                break;
+            case 6:
+                System.out.println("Данный месяц летним");
+                break;
+            case 7:
+                System.out.println("Данный месяц летним");
+                break;
+            case 8:
+                System.out.println("Данный месяц летним");
+                break;
+            case 9:
+                System.out.println("Данный месяц является осенним");
+                break;
+            case 10:
+                System.out.println("Данный месяц является осенним");
+                break;
+            case 11:
+                System.out.println("Данный месяц является осенним");
+                break;
+            case 12:
+                System.out.println("Данный месяц является зимним");
+                break;
+            default:
+                System.out.println("Указанного номера месяца не существует");
+        }
+    }
+
 
 }
