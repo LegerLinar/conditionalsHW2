@@ -51,7 +51,7 @@ public class Main {
         int clientDeviceYear = 2015;
 
         if (clientOS == 0) {
-            if (clientDeviceYear < 2015) {
+            if (clientDeviceYear <= 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             } else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
@@ -137,41 +137,25 @@ public class Main {
         int monthNumber = 12;
 
         switch (monthNumber) {
+            case 12:
             case 1:
-                System.out.println("Данный месяц является зимним");
-                break;
             case 2:
                 System.out.println("Данный месяц является зимним");
                 break;
             case 3:
-                System.out.println("Данный месяц весенним");
-                break;
             case 4:
-                System.out.println("Данный месяц является весенним");
-                break;
             case 5:
                 System.out.println("Данный месяц является весенним");
                 break;
             case 6:
-                System.out.println("Данный месяц летним");
-                break;
             case 7:
-                System.out.println("Данный месяц летним");
-                break;
             case 8:
-                System.out.println("Данный месяц летним");
+                System.out.println("Данный месяц является летним");
                 break;
             case 9:
-                System.out.println("Данный месяц является осенним");
-                break;
             case 10:
-                System.out.println("Данный месяц является осенним");
-                break;
             case 11:
                 System.out.println("Данный месяц является осенним");
-                break;
-            case 12:
-                System.out.println("Данный месяц является зимним");
                 break;
             default:
                 System.out.println("Указанного номера месяца не существует");
